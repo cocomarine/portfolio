@@ -7,10 +7,41 @@
     </head>
     <body>
         <header>
-
+            <nav>
+                <a href="../index.html">Go back</a>
+                <a href="../pages/projects.html" target="_blank">My projects</a>
+            </nav>
+            <h1>Get In Touch</h1>
         </header>
         <main>
+            <p>I am open for new opportunities. Do drop me a line if you want to chat.</p>
+            <form>
+                <fieldset>
+                  <legend>Your details</legend>
+              
+                  <label for="name">Name</label>
+                  <input id="name" type="text" placeholder="John Doe / Jane Doe">
+              
+                  <br />
 
+                  <label for="email">Email</label>
+                  <input id="email" type="email" placeholder="email@example.com">             
+                </fieldset>
+                <fieldset>
+                  <legend>Reasons for contacting</legend>
+
+                  <label for="options"></label>
+                  <input id="options" type="checkbox" name="reasons" value="project enquiry"> Project enquiry
+                  <input id="options" type="checkbox" name="reasons" value="collaboration"> Collaboration
+                  <input id="options" type="checkbox" name="reasons" value="others"> Anything else
+
+                  <br />
+              
+                  <textarea id="message" name="message" placeholder="Write something..."></textarea>
+                </fieldset>
+              
+                <input type="submit" name="submit" value="Submit">
+              </form>
         </main>
         <fotter>
             
