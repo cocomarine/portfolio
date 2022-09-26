@@ -1,64 +1,150 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            HJ Kang
-        </title>
+        <title>HJ Kang</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">       
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;300;400&family=Londrina+Shadow&family=Nunito+Sans:wght@200;300;400;700;800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/720abcaafe.js" crossorigin="anonymous"></script>    
     </head>
     <body>
-        <header>
-            <img src="./images/my_front_photo.png" width="200" alt="HJ Kang's photo">
-            <h1>HJ Kang</h1>
-            <h2>A junior developer</h2>
-            <nav>
-                <a href="./pages/projects.html" target="_blank">My projects</a>
-                <a href="./pages/contact.html" target="_blank">Contact me</a>
-            </nav>
-        </header>
-        <main>
-            <br />
-            <hr />
-            <section>
-                <h3>About me</h3>
-            </section>
-            <p>Hello! I am HJ, an aspiring Software Developer who started Manchester Codes Software Engineer course in Sept 2022. 
-                Prior to this, I worked as a research scientist at Imperial College London. </p>
-            <figure>
-                <img src="./images/scientist_at_work.jpg" width="400" alt="a female scientist working">
-                <br />
-                <figurecaption>
-                    This would be how I looked like back in those days...
-                </figurecaption>
-            </figure>
-            <p>After many life’s events, I decided to change my career to a new direction. 
-                It is quite a challenge, but I am really excited about the new adventure!</p>
-            <figure>
-                <img src="./images/adventure_1.jpg" width="400" alt="a hiker against the backdrop of massive mountains ">
-                <br />
-                <figurecaption>
-                    I feel like the hiker in this picture!
-                </figurecaption>
-            </figure>
-            <section>
-                <h3>Qualities</h3>
-                <ol>
-                    <li>Reliable</li>
-                    <li>Dedicated</li>
-                    <li>Resourceful</li>
-                </ol>
-            </section>
-            <section>
-                <h3>Hobbies & Interest</h3>
-                <ul>
-                    <li>Running/walking</li>
-                    <li>Gardening</li>
-                    <li>Cooking</li>
-                    <li>Listening to music</li>
-                </ul>
-            </section>
-        </main>
+        
+        <!-- Fixed sidebar -->
+        <section class="sidebar hide-medium hide-small">
+            <div class="my-big-photo"></div>
+        </section>
+        
+
+        <nav class="nav-bar" id="top">
+            <ul>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- Start of main content-->
+        <section class="main-content">
+            <!-- Header -->
+            <header class="center-heading" id="home">
+                <h1 class="jumbo"><b>HJ Kang</b></h1>
+                <p>Junior Software Developer</p>
+                <img src="../portfolio/images/my_photo_mono.jpg" class="image hide-large hide-small round small-img">
+                <img src="../portfolio/images/my_photo_mono.jpg" class="image hide-large hide-medium round" width="1000" height="1333">
+            </header>
+
+             <!-- To the top (home) button -->
+            <a href="#top"><button class="top-button"><i class="fa-solid fa-angle-up"></i></button></a>
+
+            <main>
+                                
+                <!-- Portfolio Section -->
+                <section class="content" id="portfolio">
+                    <h2 class="text-grey">Portfolio</h2>
+                    <hr class="light-bar">
+
+                    <!-- Grid -->
+                    <ul class="portfolio-grid">
+                        <li class="portfolio-item port-item-1">
+                           <a href="add link">
+                                <img src="images/adventure_1.jpg" class="portfolio-img" alt="Portfolio image 1"></a>
+                        </li>
+                        <li class="portfolio-item port-item-2">
+                            <a href="add link">
+                               <img src="images/kwcc.jpg" class="portfolio-img" alt="Portfolio image 2"></a>
+                        </li>
+                        <li class="portfolio-item port-item-3">
+                            <a href="add link">
+                                <img src="images/letswalk.jpg" class="portfolio-img" alt="Portfolio image 3"></a>
+                        </li>
+                        <li class="portfolio-item port-item-4">
+                            <a href="add link">
+                                <img src="images/sortandorg.jpg" class="portfolio-img" alt="Portfolio image 4"></a>
+                        </li>
+                        <li class="portfolio-item port-item-5">
+                            <a href="add link">
+                                <img src="images/blocks.jpg" class="portfolio-img" alt="Portfolio image 5"></a>
+                        </li>
+                        <li class="portfolio-item port-item-6">
+                            <a href="add link">
+                                <img src="images/tarts.jpg" class="portfolio-img" alt="Portfolio image 6"></a>
+                        </li>
+                        <li class="portfolio-item port-item-7">
+                            <a href="add link">
+                                <img src="images/veggies.jpg" class="portfolio-img" alt="Portfolio image 7"></a>
+                        </li>
+                        <!--  Adding an empty <li> here so the final photo doesn't stretch like crazy.  -->
+                        <li class="portfolio-item"></li>
+                    </ul>
+                    <!-- End photo grid -->
+                </section>
+                <!-- End Portfolio Section -->
+
+                <!-- About Section -->
+                <section class="content" id="about">
+                    <h2 class="text-grey">About</h2>
+                    <hr class="light-bar">
+                    <p class="body-text">Hello! I am HJ, an aspiring Software Developer who started Manchester Codes Software Engineer course in Sept 2022. 
+                        Prior to this, I worked as a research scientist at Imperial College London and The Institute of Cancer Research. After many life’s events, I decided to change my career to a new direction. 
+                        It is quite a challenge, but I am really excited about the new adventure!
+                    </p>
+                </section>                
+
+                <!-- Skills Section -->
+                <section class="content" id="skills">
+                    <h2 class="text-grey">Skills</h2>
+                    <hr class="light-bar">
+                    <p class="body-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore temporibus porro saepe repellendus, 
+                        commodi aliquam ratione necessitatibus vitae earum sequi quia, maxime blanditiis quidem adipisci dolorum! Ex, nulla eum!
+                    </p>
+                </section>
+
+                 <!-- Contact Section -->
+                 <section class="content" id="contact">
+                    <h2 class="text-grey">Get In Touch <i class="fa-solid fa-paper-plane"></i></h2>
+                    <hr class="light-bar">
+                    <p class="body-text">Thanks for visitng! I am always open to new opportunities. If you want to have a chat, do drop me a line. 
+                    </p>
+                    <br />
+                    <form class="body-text">
+                        <fieldset>
+                          <legend>Your details</legend>
+                      
+                          <label for="name">Name</label>
+                          <input id="name" type="text" placeholder="John Doe / Jane Doe">
+                      
+                          <br />
+
+                          <label for="email">Email</label>
+                          <input id="email" type="email" placeholder="email@example.com">             
+                        </fieldset>
+                        <br />
+                        <fieldset>
+                          <legend>Reasons for contacting</legend>
+        
+                          <label for="options"></label>
+                          <input id="options" type="checkbox" name="reasons" value="project enquiry" checked="checked"> Project enquiry
+                          <input id="options" type="checkbox" name="reasons" value="collaboration"> Collaboration
+                          <input id="options" type="checkbox" name="reasons" value="others"> Anything else
+        
+                          <br />
+                      
+                          <textarea id="message" name="message" placeholder="Write something..."></textarea>
+                        </fieldset>
+                        <br />
+                        <input type="submit" name="submit" value="Send Message">
+                      </form>
+                    </section>
+
+            </main>
+        </section>
         <footer>
-            <p>2022, created by HJ Kang</p>
+            2022, Designed by HJ Kang
         </footer>
     </body>
 </html>
