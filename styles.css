@@ -1,6 +1,7 @@
 body, h3,h4,h5,h6 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+    color: #606060;
 }
 
 
@@ -41,18 +42,19 @@ html {
 .nav-bar ul {
     display: flex;
     list-style: none;
+    font-size: 16px;
 }
 
 .nav-bar li {
     padding-left: 1rem;
 }
 
-.nav-bar a {
+a {
   text-decoration: none;
   color: #606060;
 }
 
-.nav-bar a:visited {
+a:visited {
     color: #606060;
   }
 
@@ -64,6 +66,7 @@ html {
 
 .center-heading {
     text-align: center;
+    color: black;
     padding:128px 16px;
     position: relative;
     overflow: auto;
@@ -121,12 +124,12 @@ img {
     padding-bottom: 32px;
 }
 
-.text-grey {
+.darker-grey {
     color:#757575;
 }
 
 .body-text {
-    color: #606060;
+    /* color: #606060; */
     text-align: justify;
     line-height: 24px;
 }
@@ -232,10 +235,17 @@ input[type=submit]:hover {
 }
 
 
+.footer {
+    padding: 12px 24px;
+    margin-left: 40%;
+}
+
+
 @media (min-width:993px) {
     .hide-large {
         display:none;
     }
+
     /* .sidebar {
         display:block;
     } */
@@ -245,13 +255,9 @@ input[type=submit]:hover {
     .sidebar {
         display:none;
     }
-    .center-heading {
+    .center-heading, .main-content, .footer {
         margin-left:0;
         margin-right:0;
-    }
-    .main-content {
-        margin-left: 0;
-        margin-right: 0;
     }
 }
 
