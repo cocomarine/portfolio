@@ -3,13 +3,14 @@ body, h3,h4,h5,h6 {
     font-weight: 300;
 }
 
-h1 {
-    font-family: 'Londrina Shadow', cursive;
-}
 
 h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
+}
+
+html {
+	scroll-behavior: smooth;
 }
 
 .my-big-photo {
@@ -25,8 +26,8 @@ h2 {
     width: 40%;
     height: 100%;
     background: white;
-    z-index: 1;
-    overflow: auto;
+    /* z-index: 1; */
+    /* overflow: auto; */
 }
 
 .nav-bar {
@@ -90,10 +91,13 @@ img {
     margin:auto;
 }
 
-.jumbo {
+.title-heading {
+    font-family: 'Londrina Shadow', cursive;
     font-size: 70px;
     margin: 0;
 }
+
+
 
 .content {
     margin-left:auto;
@@ -117,7 +121,7 @@ img {
 .top-button {
     position: fixed;
     bottom: 10px;
-    right: 10px;
+    right: 15px;
     max-width: 40px;
     max-height: 40px;
     width: 100%;
@@ -157,7 +161,6 @@ img {
 }
   
 .portfolio-item:last-child {
-    // There's no science in using "10" here. In all my testing, this delivered the best results.
     flex-grow: 10;
 }
 
